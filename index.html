@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Ayaz</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+            background-size: 400% 400%;
+            animation: gradient 10s infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .buttons a img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .buttons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Enes Ayaz</h1>
+        <div class="buttons">
+            <a href="https://www.instagram.com/enesayaz.16" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/enes-ayaz" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
