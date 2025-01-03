@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enes Ayaz</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
         body {
             margin: 0;
             height: 100vh;
@@ -12,22 +14,24 @@
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
-            background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
-            background-size: 400% 400%;
-            animation: gradient 10s infinite;
+            background: black;
+            animation: backgroundSwitch 10s infinite alternate ease-in-out;
             color: white;
             text-align: center;
         }
 
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        @keyframes backgroundSwitch {
+            0% { background-color: black; color: white; }
+            25% { background-color: #333; color: white; }
+            50% { background-color: gray; color: black; }
+            75% { background-color: #ccc; color: black; }
+            100% { background-color: white; color: black; }
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
         }
 
         .buttons {
@@ -71,3 +75,4 @@
     </div>
 </body>
 </html>
+
