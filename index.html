@@ -77,11 +77,33 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        .top-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .top-right a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #555;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .top-right a:hover {
+            background-color: #333;
+        }
     </style>
 </head>
 <body>
+    <div class="top-right">
+        <a href="sayfa1.html">Sayfa 1</a>
+    </div>
     <div>
-        <h1 style="font-size: 6rem;">Enes Ayaz</h1>
+        <h1>Enes Ayaz</h1>
         <div class="buttons">
             <a href="https://www.instagram.com/enesayaz.16" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
@@ -99,4 +121,3 @@
     </div>
 </body>
 </html>
-
